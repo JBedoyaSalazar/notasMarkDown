@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+/* ====== Estilos personalizados para la app ====== */
+
+.note-item {
+  @apply cursor-pointer rounded-lg border border-slate-200 p-3 transition hover:border-accent hover:shadow-sm;
+}
+
+.note-item.active {
+  @apply border-accent bg-sky-50 shadow-md;
+}
+
+.note-title {
+  @apply mb-1 text-sm font-semibold text-slate-900;
+}
+
+.note-excerpt {
+  @apply mb-2 line-clamp-2 text-xs text-slate-600;
+}
+
+.note-date {
+  @apply text-xs text-slate-400;
+}
+
+.empty-message {
+  @apply text-center text-sm text-slate-500;
+}
+
+.empty-preview {
+  @apply text-center text-sm italic text-slate-400;
+}
